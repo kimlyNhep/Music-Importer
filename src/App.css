@@ -1,10 +1,36 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Back-img {
+  background-image: url(./storage/images/back-auth.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  /* filter: blur(3px); */
+}
+
+.Auth-box {
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border: gray solid 2px;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
+  /* width: 400px; */
+  /* box-shadow: 5px 6px 5px grey; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,13 +52,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
