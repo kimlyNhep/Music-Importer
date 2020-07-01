@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
+import './styles.css';
 
 const layout = {
   labelCol: {
@@ -26,14 +27,14 @@ const Login = () => {
   };
 
   return (
-    <Form
+    <Form 
       {...layout}
       name="basic"
       initialValues={{
         remember: true,
       }}
       onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
+       onFinishFailed={onFinishFailed}
     >
       <Form.Item
         label="Username"
@@ -71,8 +72,8 @@ const Login = () => {
         </Button>
       </Form.Item>
 
-      <Form.Item {...tailLayout}>
-        <a href="/#">Sing Up</a>
+      <Form.Item {...tailLayout}>New to Us?
+        <a href="/#"> Register Now</a>
       </Form.Item>
     </Form>
   );
